@@ -23,3 +23,7 @@ Host ec2-large
      HostName ec2-52-32-123-247.us-west-2.compute.amazonaws.com
      User ubuntu
      IdentityFile ~/herbie-all/herbgrind/herbgrind-test.pem
+
+Host joeserver
+     HostName start9.cs.washington.edu
+     user alex
