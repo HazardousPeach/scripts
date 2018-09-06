@@ -1,6 +1,7 @@
 URxvt.depth: 32
 URxvt*background: rgba:1111/1111/1111/aaaa
 URxvt*foreground: rgba:ffff/ffff/ffff/ffff
+URxvt*font:xft:Liberation Mono:pixelsize=20
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 URxvt.perl-ext-common: default,clipboard
