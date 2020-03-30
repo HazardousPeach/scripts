@@ -1,5 +1,6 @@
 # xinitcommon
 
+emacs --daemon &
 xflux -z 92103
 sh ~/.fehbg
 xsetroot -cursor_name left_ptr
