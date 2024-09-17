@@ -20,7 +20,7 @@ setopt correctall
 
 autoload -U promptinit
 promptinit
-prompt gentoo
+prompt walters
 
 export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
@@ -39,7 +39,6 @@ bindkey "^?" backward-delete-char
 bindkey "^W" backward-kill-word
 bindkey "^H" backward-delete-char
 bindkey "^U" backward-kill-line
-bindkey "^R" history-incremental-search-backward
 
 export TERM=rxvt-unicode
 export EDITOR=emacsclient
@@ -75,3 +74,7 @@ function runx() {
 
 # added by travis gem
 [ -f /home/alex/.travis/travis.sh ] && source /home/alex/.travis/travis.sh
+alias gs="git status -uno"
+
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh

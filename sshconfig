@@ -1,7 +1,14 @@
 Host server
-     HostName alexsanchezstern.com
+     HostName ssh.alexsanchezstern.com
      Port 44
      User alex
+
+Host router
+     HostName ssh.alexsanchezstern.com
+     User root
+     HostKeyAlias router
+     CheckHostIP no
+
 
 Host uwplse.org
      Hostname uwplse.org
@@ -12,8 +19,9 @@ Host warfa
      User astar
 
 Host benserver
-     Hostname ben.thegentlemenraptors.com
+     Hostname bighits.org
      User alex
+     Port 25100
 
 Host goto
      HostName goto.ucsd.edu
@@ -24,6 +32,64 @@ Host ec2-large
      User ubuntu
      IdentityFile ~/herbie-all/herbgrind/herbgrind-test.pem
 
+Host ec2-proverbot
+     HostName ec2-3-139-239-42.us-east-2.compute.amazonaws.com
+     User ubuntu
+     IdentityFile ~/research/proverbot9001/proverbot9001-aws.pem
+
+
 Host joeserver
      HostName start9.cs.washington.edu
      user alex
+
+Host ucsd-north
+     HostName north.ucsd.edu
+     User alexss
+
+Host ucsd-south
+     Hostname south.ucsd.edu
+     User alexss
+
+Host ucsd-west
+     Hostname west.ucsd.edu
+     User alex
+
+Host umass-gypsum
+     Hostname gypsum.cs.umass.edu
+     User sanchezstern
+
+Host umass-gypsum-gateway
+     Hostname gypsum.cs.umass.edu
+     ProxyJump sanchezstern@gypsum-gateway.cs.umass.edu
+     User sanchezstern
+
+Host umass-swarm
+     Hostname swarm.cs.umass.edu
+     User sanchezstern
+
+Host umass-unity
+     Hostname unity.rc.umass.edu
+     User asanchezster_umass_edu
+
+Host alnilam
+  HostName 150.136.100.250
+  User alex
+
+Host lambda
+  User alex
+  HostName localhost
+  Port 8888
+  ProxyJump alnilam
+  ProxyCommand ssh -q alnilam nc -q0 myserver 22
+
+Host attu.cs.washington.edu
+	User asnchstr
+	Hostname attu.cs.washington.edu
+
+Host attu
+  User asnchstr
+  Hostname attu.cs.washington.edu
+
+Host recycle
+  User asnchstr
+  Hostname recycle.cs.washington.edu
